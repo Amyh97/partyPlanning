@@ -1,0 +1,43 @@
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    background: url("/media/logo.png") no-repeat;
+    background-size: contain;
+    height: 86px;
+    display: block;
+    margin-left: 3.25rem;
+}
+
+.menu {
+    margin-left: 0;
+    justify-content: flex-end;
+    display: grid;
+}
+
+.menu {
+    margin-left: 0;
+    justify-content: flex-end;
+    display: grid;
+}
+
+.nav-link i {
+    color: #ff9800;
+}
+
+.navbar-toggler {
+    width: 25%;
+}
+
+/*--- footer ---*/
+footer {
+    text-align: center;
+}
+
+footer i {
+    color: #ff9800;
+}
