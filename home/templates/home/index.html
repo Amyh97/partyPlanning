@@ -1,1 +1,26 @@
 {% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-md-10 mx-auto">
+        <table class="tabel-responsive table">
+            <thead>
+                <th>Task</th>
+                <th>Notes</th>
+                <th>Who is doing this?</th>
+                <th>Complete?</th>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                <tr>
+                    <td>{{task.name | title}}</td>
+                    <td>{{task.notes}}</td>
+                    <td>{{task.person}}</td>
+                    <td>{{task.complete}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

@@ -89,8 +89,6 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <!-- is authenticated from Django allauth -->
                                     {% if request.user.is_authenticated %}
-                                    <!-- if user is a customer -->
-                                    <li><a class="dropdown-item" href="#">My Account</a></li>
                                     <!-- url from Django allauth -->
                                     <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
                                     {% else %}
@@ -113,7 +111,7 @@
 
 
 
-    <div class="my-container w-100">
+    <div class="custom-container w-100">
         <div class="backround-img"></div>
         {% if messages %}
         <div class="message-container">
